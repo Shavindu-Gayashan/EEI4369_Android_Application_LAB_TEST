@@ -2,5 +2,5 @@
     <string name="app_name">shavidu</string>
     <string name="course">EEI4369 Mobile Application Development for Android</string>
     <string name="s_number">S23010433</string>
-
+    <string name="API_KEY">AIzaSyDvU3GQkgXTu3nZBJTthRxBF40_XXb7abI</string>
 </resources>

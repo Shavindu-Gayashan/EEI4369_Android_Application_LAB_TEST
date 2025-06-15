@@ -5,12 +5,18 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+
+public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
+
+    private GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +29,17 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Delay for 5 seconds before starting the LoginActivity
+        // Delay for 3 seconds before starting the LoginActivity
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
             finish(); // Close MainActivity
-        }, 5000);
+        }, 3000);
+
+    }
+
+    @Override
+    public void onMapReady(@NonNull GoogleMap googleMap) {
 
     }
 }
