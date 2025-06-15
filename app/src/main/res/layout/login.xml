@@ -88,5 +88,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+    <ImageButton
+        android:id="@+id/tempratre_alert_button"
+        android:layout_width="71dp"
+        android:layout_height="67dp"
+        android:background="#47A622"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_top"
+        app:layout_constraintVertical_bias="0.944"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

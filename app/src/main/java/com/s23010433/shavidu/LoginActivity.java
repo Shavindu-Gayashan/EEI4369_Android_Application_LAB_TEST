@@ -13,6 +13,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
+        findViewById(R.id.tempratre_alert_button).setOnClickListener(v -> {
+            startActivity(new Intent(LoginActivity.this, TempratureActivity.class));
+        });
+
         Button loginButton = findViewById(R.id.button);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
